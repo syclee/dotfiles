@@ -1,0 +1,26 @@
+" Activate TAB auto-completion for file paths
+set wildmode=list:longest
+
+" no wrap
+set nowrap
+
+" set leader
+let mapleader = ","
+let maplocalleader = "\\"
+
+" quote highlighted
+vnoremap <leader>" <esc>`>a"<esc>`<i"<esc> 
+
+" exit insert mode with jk 
+inoremap jk <esc> 
+inoremap <esc> <nop>
+
+" no cheating
+nnoremap <Left> <nop>
+inoremap <Left> <nop>
+nnoremap <Right> <nop>
+inoremap <Right> <nop>
+nnoremap <Up> <nop>
+inoremap <Up> <nop>
+nnoremap <Down> <nop>
+inoremap <Down> <nop>
