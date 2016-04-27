@@ -27,13 +27,13 @@ zz  | scrolls window so that cursor is in the middle
 zb | scrolls window so that cursor is at the bottom
 
 ## Move cursor
-HJKL - left, down, up, right
-w
-W
-e
-E
-b
-B
+hjkl - left, down, up, right
+w - next word
+W - next word!
+e - end of word
+E - end of word!
+b - back word
+B - back word!
 H - to the top of the screen
 L - to the bottom of the screen
 M - to the middle of the screen
@@ -41,15 +41,17 @@ M - to the middle of the screen
 ## Window management
 Ctrl-w,w
 
+## Buffer 
+:ls - display buffers
+:sbuffer # - open buffer in split window
+
 ## Tricks
 ### Insert text in multiple lines
-
 Ctrl-v
 j x N times
 I
 type text
 escape
-
 
 # Plugins
 ## NERDTree
