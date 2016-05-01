@@ -4,6 +4,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
+Plug 'tmhedberg/simpylfold'
 
 call plug#end()
 
@@ -58,3 +59,14 @@ nnoremap <Up> <nop>
 inoremap <Up> <nop>
 nnoremap <Down> <nop>
 inoremap <Down> <nop>
+
+" Copy and Paste to clipboard
+vnoremap <leader>c "*y
+vnoremap <leader>v "*p
+nnoremap <leader>v "*p
+
+" Fold highlight
+hi Folded ctermfg=244 ctermbg=236
+
+" NERDTree
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
