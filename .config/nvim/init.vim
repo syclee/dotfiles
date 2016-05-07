@@ -50,7 +50,7 @@ vnoremap <leader>" <esc>`>a"<esc>`<i"<esc>
 inoremap jk <esc> 
 inoremap <esc> <nop>
 
-" no cheating
+" purge dangerous and undesirable mappings
 nnoremap <Left> <nop>
 inoremap <Left> <nop>
 nnoremap <Right> <nop>
@@ -59,6 +59,8 @@ nnoremap <Up> <nop>
 inoremap <Up> <nop>
 nnoremap <Down> <nop>
 inoremap <Down> <nop>
+noremap ZZ <nop>
+noremap q <nop>
 
 " Copy and Paste to clipboard
 vnoremap <leader>c "*y
@@ -66,7 +68,13 @@ vnoremap <leader>v "*p
 nnoremap <leader>v "*p
 
 " Fold highlight
-hi Folded ctermfg=244 ctermbg=236
+hi Folded ctermfg=248 ctermbg=236
 
+" set number and configure style
+set number
+highlight LineNr ctermfg=244 ctermbg=236
+
+" Mappings - Window
+nnoremap <leader>q <C-w>q 
 " NERDTree
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
