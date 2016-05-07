@@ -8,8 +8,9 @@ See all options different from default
 :set
 
 ## Navigation
-Go to file if cursor is under a filename, e.g. import '~/yourfile'
-gf
+gf - Go to file if cursor is under a filename, e.g. import '~/yourfile'
+[number]gg or
+[number]G - Go to line
 
 ## Query vim 
 Wondering where a setting was last set?
@@ -57,6 +58,10 @@ Ctrl-w, K - move window very top
 :bnext - next buffer
 :bprevious - previous buffer
 
+## Opening new file inside vim
+:sp filename - open new file in horizontal
+:vsp filename - open new file in vertical
+
 ## Find and Replace
 :s/foo/bar/g - Find (in current line only) occurrences of foo and replace with bar
 :%s/foo/bar/g - Find (in all lines) occurrences of foo and replace with bar
@@ -68,9 +73,18 @@ Ctrl-w, K - move window very top
 "*y
 
 ## Folding
-zf - create fold
-zo - open fold
-zc - close fold
+zo - opens a fold at the cursor.
+zO - opens all folds at the cursor.
+zm - increases the foldlevel by one.
+zM - closes all open folds.
+zr - decreases the foldlevel by one.
+zR - decreases the foldlevel to zero -- all folds will be open.
+zj - moves the cursor to the next fold.
+zk - moves the cursor to the previous fold.
+zd - deletes the fold at the cursor.
+zE - deletes all folds.
+[z - move to start of open fold.
+]z - move to end of open fold.
 
 ## Tricks
 ### Insert text in multiple lines
